@@ -4,13 +4,14 @@ Rails.application.routes.draw do
 
   get 'urls/index'
 
-  get 'urls/new'
+  root 'urls#new'
 
   post 'urls/create'
 
   get 'index/:id' => 'urls#traffic_cop'
 
   get ':id' => 'urls#traffic_cop'
+
 
 
 end

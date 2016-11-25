@@ -1,4 +1,4 @@
-<h1>Urls#new</h1>
+<h1>Make some shorty links</h1>
 
 
   <%= form_for @url, url: { action: "create" } do |f| %>
@@ -8,3 +8,8 @@
   <%= f.submit "Make it shorty!" %>
 
   <% end %>
+
+<br><br>
+<br><br>
+
+  <%= link_to 'See shorty link index', urls_index_path %>

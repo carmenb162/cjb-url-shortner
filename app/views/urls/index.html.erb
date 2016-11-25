@@ -1,12 +1,12 @@
 <h1>Index of Shortened URLs</h1>
-<p>Here are your shorty links!</p>
+<br><br>
 
 <table>
   <th>
     <tr>
-      <td>Original link</td>
-      <td>Shorty link</td>
-      <td>Dyanmic Link</td>
+      <td><h3>    Original link    </h3></td>
+      <td><h3>    Shorty link    </h3></td>
+      <td><h3>    Dynamic Link    </h3></td>
     </tr>
   </th>
   <% @urls.each do |shorty| %>
@@ -17,6 +17,9 @@
     <td><a href="<%= shorty.original %>" target ="_blank"><%= shorty.dynamic_link %></a></td>
   </tr>
 
-
 <% end %>
 </table>
+<br><br>
+<br><br>
+
+<%= link_to 'Make another shorty', root_path %>

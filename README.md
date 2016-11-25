@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+URL shortener exercise made for Week 7 of Wyncode.  RoR.
+Deployed on Heroku at: https://short-like-me.herokuapp.com/
 
-Things you may want to cover:
 
-* Ruby version
+URL Shortener
+Url Shortener
+Let’s create a rails app that shortens urls.
 
-* System dependencies
+User Story
+As a user I should be able to enter a url in a form and receive a shortened url as an integer(id)
+When visiting this shortened url I should be redirected to the original url
+Example:
+- Given a ‘long’ url in the form (https://twitter.com/jciancio7), should generate a shortened url (https://YOUR_APP.herokuapp.com/3)
+- When I visit https://YOUR_APP.herokuapp.com/3, I should be redirected to https://twitter.com/jciancio7
 
-* Configuration
+Bonus
+Instead of just receiving an integer
+- As a user I should be able to enter a url in a form and receive a shortened url as a random string
+- When visiting this shortened url I should be redirected to the original url
 
-* Database creation
+Example:
+- Given a 'long’ url (https://twitter.com/jciancio7), should generate a shortened url (https://YOUR_APP.herokuapp.com/asdf)
+- When I visit https://YOUR_APP.herokuapp.com/asdf, I should be redirected to https://twitter.com/jciancio7
+NOTE: Check for uniqueness so that you don’t create duplicate shortened urls
 
-* Database initialization
+Bonus 2
+As a user I should be able to pass a url as a paramater and receive a shortened url as a random string
+When visiting this shortened url I should be redirected to the original url
+Example:
+- Visitng https://YOUR_APP.herokuapp.com/https://twitter.com/jciancio7, should return a shortened url (https://YOUR_APP.herokuapp.com/asdf)
+- Visitng https://YOUR_APP.herokuapp.com/asdf I should be redirected to https://twitter.com/jciancio7
 
-* How to run the test suite
+Here is Joe’s implementation of the first two examples
+https://joes-shurl.herokuapp.com/
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+What this means is that the code is on github. We STRONGLY urge you not to look at the code for this, it won’t help you.
+Take your own approach and don’t scaffold!

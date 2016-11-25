@@ -1,2 +1,21 @@
-<h1>Urls#index</h1>
-<p>Find me in app/views/urls/index.html.erb</p>
+<h1>Index of Shortened URLs</h1>
+<p>Here are your shorty links!</p>
+
+<table>
+  <th>
+    <tr>
+      <td>Original link</td>
+      <td>Shorty link</td>
+    </tr>
+  </th>
+  <% @urls.each do |shorty| %>
+
+  <tr>
+    <td><%= shorty.original %></td>
+    <td><a href="<%= shorty.original %>" target ="_blank"><%= shorty.short %></a></td>
+    </td>
+  </tr>
+
+
+<% end %>
+</table>

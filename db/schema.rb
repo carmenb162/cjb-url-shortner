@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161125170210) do
+ActiveRecord::Schema.define(version: 20161125181933) do
 
   create_table "urls", force: :cascade do |t|
     t.string   "original"

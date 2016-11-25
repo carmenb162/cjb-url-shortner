@@ -6,6 +6,7 @@
     <tr>
       <td>Original link</td>
       <td>Shorty link</td>
+      <td>Dyanmic Link</td>
     </tr>
   </th>
   <% @urls.each do |shorty| %>
@@ -13,7 +14,7 @@
   <tr>
     <td><%= shorty.original %></td>
     <td><a href="<%= shorty.original %>" target ="_blank"><%= shorty.short %></a></td>
-    </td>
+    <td><%= shorty.dynamic_link %></td>
   </tr>
 
 

@@ -30,6 +30,14 @@ class UrlsController < ApplicationController
 
   end
 
+  def traffic_cop
+  where_to_go = Url.find(params[:id])
+
+  redirect_to where_to_go.original
+
+
+  end
+
 
 end
 

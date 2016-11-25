@@ -3,7 +3,8 @@
 
   <%= form_for @url, url: { action: "create" } do |f| %>
   <%= f.label :original %>
-  <%= f.url_field :original %>
+  <%= f.url_field :original, :autofocus=>true %>
+
   <%= f.submit "Make it shorty!" %>
 
   <% end %>

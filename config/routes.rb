@@ -8,9 +8,11 @@ Rails.application.routes.draw do
 
   post 'urls/create'
 
-  get 'index/:id' => 'urls#traffic_cop'
+  get 'index/:short' => 'urls#traffic_cop'
 
-  get ':id' => 'urls#traffic_cop'
+  get 'urls/index/:short' => 'urls#traffic_cop'
+
+  get '/:short' => 'urls#traffic_cop'
 
 
 
